@@ -1,17 +1,10 @@
-<div style="display: flex; align-items: center; gap: 20px;">
-  <img src="./images/profile.jpeg" alt="profile photo" 
-       style="width:150px; height:150px; object-fit:cover; border-radius:8px;" />
+# 陳旻寬 Min-Kuan Chen
 
-  <div>
-    <h1>陳旻寬 Min-Kuan Chen</h1>
-    <p>
-      📧 Email: minkuanchen99@gmail.com<br>
-      🔗 <a href="https://github.com/MinKuanIsHere">GitHub</a><br>
-      🔗 <a href="https://www.linkedin.com/in/min-kuan-chen-89a525236/">LinkedIn</a>
-    </p>
-  </div>
-</div>
+📧 Email: minkuanchen99@gmail.com
 
+🔗 GitHub: [MinKuanIsHere](https://github.com/MinKuanIsHere)
+
+🔗 LinkedIn: [min-kuan-chen](https://www.linkedin.com/in/min-kuan-chen-89a525236/)
 
 ---
 
