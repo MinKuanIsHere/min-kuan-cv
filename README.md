@@ -1,5 +1,7 @@
 # 陳旻寬 Min-Kuan Chen
 
+📌 Bio: [Bio](https://minkuanishere.github.io/min-kuan-cv/)
+
 📧 Email: minkuanchen99@gmail.com
 
 🔗 GitHub: [MinKuanIsHere](https://github.com/MinKuanIsHere)
