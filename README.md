@@ -1,11 +1,17 @@
-# ![profile photo](./images/profile.jpeg)  
-# 陳旻寬 Min-Kuan Chen
+<div style="display: flex; align-items: center; gap: 20px;">
+  <img src="./images/profile.jpeg" alt="profile photo" 
+       style="width:150px; height:150px; object-fit:cover; border-radius:8px;" />
 
-📧 Email: minkuanchen99@gmail.com
+  <div>
+    <h1>陳旻寬 Min-Kuan Chen</h1>
+    <p>
+      📧 Email: minkuanchen99@gmail.com<br>
+      🔗 <a href="https://github.com/MinKuanIsHere">GitHub</a><br>
+      🔗 <a href="https://www.linkedin.com/in/min-kuan-chen-89a525236/">LinkedIn</a>
+    </p>
+  </div>
+</div>
 
-🔗 GitHub: [MinKuanIsHere](https://github.com/MinKuanIsHere)
-
-🔗 LinkedIn: [min-kuan-chen](https://www.linkedin.com/in/min-kuan-chen-89a525236/)
 
 ---
 
@@ -13,7 +19,7 @@ I’m Min-Kuan, a research-oriented graduate student passionate about **AI appli
 
 ---
 
-## 🎓 Education
+## Education
 
 * **M.S., Institute of Network Engineering, National Yang Ming Chiao Tung University** *Feb 2025 – Expected Jan 2027*
 * **M.S., Department of Money and Banking,National Chengchi University** *Aug 2022 – Jul 2024*
