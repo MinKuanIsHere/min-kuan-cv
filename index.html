@@ -1,121 +1,343 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Min-Kuan Chen - Resume</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>陳旻寬 | CV / Resume</title>
+  <meta name="description" content="陳旻寬（Chen Min‑Kuan）— AI systems, LLM optimization, enterprise IT integration. CV / Resume." />
+  <meta property="og:title" content="陳旻寬 | CV / Resume" />
+  <meta property="og:description" content="AI systems, LLM optimization, enterprise IT integration." />
+  <meta property="og:type" content="website" />
   <style>
-    .header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+    :root{
+      --bg:#0b0c0f;            /* dark canvas */
+      --card:#101218;         /* dark card */
+      --text:#e6e9ef;         /* light text */
+      --muted:#b4bdc6;        /* secondary text */
+      --brand:#7aa2f7;        /* accent */
+      --line:#1d2330;         /* border */
+      --chip:#0f172a;         /* pill bg */
+      --chip-text:#dbeafe;    /* pill text */
+      --link:#93c5fd;
+      --good:#34d399;
     }
-    .header-text {
-      flex: 1;
+    html,body{height:100%;}
+    body{
+      margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Noto Sans TC, "Microsoft JhengHei", Arial, sans-serif;
+      background:var(--bg);
+      color:var(--text);
     }
-    .profile-pic {
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 8px;
-      margin-left: 20px;
+    .wrap{max-width:1024px; margin:0 auto; padding:28px 20px 80px;}
+    header{display:flex; gap:20px; align-items:center; justify-content:space-between; flex-wrap:wrap;}
+    .profile{
+      display:flex; gap:16px; align-items:center;
     }
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-      line-height: 1.6;
+    .profile img{
+      width:90px; height:90px; border-radius:50%; object-fit:cover; border:2px solid var(--line);
     }
-    h1, h2 {
-      border-bottom: 2px solid #444;
-      padding-bottom: 5px;
-    }
-    .contact a {
-      margin-right: 15px;
-    }
-    .section {
-      margin-top: 30px;
-    }
-    .chinese {
-      color: #777;
-      font-style: italic;
+    .title h1{font-size:clamp(26px,3.2vw,40px); margin:0 0 6px; letter-spacing:0.3px}
+    .title p{margin:0; color:var(--muted)}
+    .links{display:flex; flex-wrap:wrap; gap:10px}
+    .btn{display:inline-flex; align-items:center; gap:8px; padding:8px 12px; border:1px solid var(--line); border-radius:999px; background:var(--chip); color:var(--link); text-decoration:none; font-weight:600}
+    .btn:hover{border-color:var(--brand)}
+    .icon{width:18px; height:18px; display:inline-block}
+
+    nav{margin:20px 0}
+    nav a{margin-right:14px; color:var(--link); text-decoration:none; font-weight:600}
+    nav a:hover{color:var(--brand)}
+
+    .grid{display:grid; gap:14px; grid-template-columns:1fr}
+    @media(min-width:880px){.grid{grid-template-columns:1.1fr 1fr}}
+
+    section{background:var(--card); border:1px solid var(--line); border-radius:16px; padding:22px}
+    section h2{margin:0 0 14px; font-size:20px}
+
+    .entry{display:grid; grid-template-columns:auto 1fr; gap:8px 14px; padding:14px 0; border-top:1px dashed var(--line)}
+    .entry:first-of-type{border-top:none; padding-top:0}
+    .when{white-space:nowrap; color:var(--muted); font-variant-numeric:tabular-nums}
+    .role{font-weight:700}
+    .org{color:var(--muted)}
+    .bullets{margin:6px 0 0 0; padding-left:18px}
+    .bullets li{margin:6px 0}
+
+    .publist li{margin:10px 0}
+
+    footer{margin-top:22px; color:var(--muted); text-align:center}
+    .good{color:var(--good); font-weight:700}
+
+    @media print{
+      body{background:#fff}
+      section{break-inside: avoid}
+      .btn, nav{display:none}
     }
   </style>
 </head>
 <body>
-  <div class="header">
-  <div class="header-text">
-    <h1>Min-Kuan Chen <span class="chinese">（陳旻寬）</span></h1>
-    <p>I’m Min-Kuan Chen, a research-oriented graduate student passionate about AI applications.</p>
-    <p class="contact">
-      📌 Bio: <a href="https://minkuanishere.github.io/min-kuan-cv/" target="_blank">https://minkuanishere.github.io/min-kuan-cv/</a><br>
-      📧 Email: minkuanchen99@gmail.com<br>
-      🔗 GitHub: <a href="https://github.com/MinKuanIsHere" target="_blank">https://github.com/MinKuanIsHere</a><br>  
-      🔗 LinkedIn: <a href="https://www.linkedin.com/in/min-kuan-chen-89a525236/" target="_blank">https://www.linkedin.com/in/min-kuan-chen-89a525236/</a><br>
-    </p>
-  </div>
-  <img src="./images/profile.jpeg" alt="Profile Photo" class="profile-pic" />
-</div>
+  <div class="wrap">
+    <header>
+      <div class="profile">
+        <img src="./images/profile.jpeg" alt="Profile Photo">
+        <div class="title">
+          <h1>陳旻寬 <span style="opacity:.7; font-weight:500">Chen Min‑Kuan</span></h1>
+          <p>AI systems · LLM optimization · Enterprise IT integration</p>
+        </div>
+      </div>
+      <div class="links">
+        <a class="btn" href="https://minkuanishere.github.io/min-kuan-cv/">Bio-1</a>
+        <a class="btn" href="https://minkuanchen.my.canva.site/">Bio-2</a>
+        <a class="btn" href="mailto:minkuanchen99@gmail.com">Email</a>
+        <a class="btn" href="https://github.com/MinKuanIsHere" target="_blank">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/min-kuan-chen-89a525236/" target="_blank">LinkedIn</a>
+        <a class="btn" href="CV.pdf" title="Download PDF">Download PDF</a>
+      </div>
+    </header>
 
-  
+    <nav>
+      <a href="#summary">About Me</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#publications">Publications</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#activity">Activity</a>
+    </nav>
 
-  <div class="section">
-    <h2> Education</h2>
-    <ul>
-    <li><p><strong>M.S., Institute of Network Engineering, National Yang Ming Chiao Tung University</strong>(Feb 2025 – Expected Jan 2027)</li>
-    <li><p><strong>M.S., Department of Money and Banking, National Chengchi University</strong> (Aug 2022 – Jul 2024)</li>
-    <li><p><strong>B.S., Information and Finance Management, National Taipei University of Technology</strong>(Aug 2018 – Jul 2022)</li>
-    </ul>
-  </div>
+    <section id="summary">
+      <h2>About Me</h2>
+      <p>My focus is on AI systems, LLM optimization, and enterprise IT integration, with proven outcomes demonstrated through publications and practical system development.</p>
+    </section>
 
-  <div class="section">
-    <h2>Publications</h2>
-    <ul>
-      <li><strong>Min-Kuan Chen.</strong> (2024). Based on Quantile Regression Forests for Predicting Option Settlement Price Returns and Trading Strategy Applications (Master's Thesis). <a href="https://hdl.handle.net/11296/627bsx" target="_blank">https://hdl.handle.net/11296/627bsx</a></li>
-      <li><strong>Min-Kuan Chen</strong>, Dong-Yuh Yang., Ming-Hua Hsieh, and Mu-En Wu. (2024). An intelligent option trading system based on heatmap analysis via PON/POD yields. <em>Expert Systems with Applications</em>, 257, 124948. <a href="https://doi.org/10.1016/j.eswa.2024.124948" target="_blank">https://doi.org/10.1016/j.eswa.2024.124948</a></li>
-      <li><strong>Min-Kuan Chen</strong>, Ming-Hua Hsieh, Yen-Lin Chen, and Mu-En Wu. (2022). On the prediction of stock price return based on LSTM and application for options trading. <em>2022 TRIA-FeAT Conference</em>.</li>
-      <li><strong>Min-Kuan Chen</strong>, Mu-En Wu, and Wen-Shuen Wu. (2022). Quantitative trading of vertical spread option strategies with stop-loss by machine learning. <em>5th International Conference on Econometrics and Statistics</em>.</li>
-    </ul>
-  </div>
+    <div class="grid">
+      <section id="education">
+        <h2>Education</h2>
+        <div class="entry">
+          <div class="when">Feb 2025 – Expected Jan 2027</div>
+          <div>
+            <div class="role">M.S., Computer Science / Institute of Network Engineering</div>
+            <div class="org">National Yang Ming Chiao Tung University</div>
+          </div>
+        </div>
+        <div class="entry">
+          <div class="when">Aug 2022 – Jul 2024</div>
+          <div>
+            <div class="role">M.S., Commerce / Financial Engineering</div>
+            <div class="org">National Chengchi University • <span class="good">GPA 4.3/4.3</span></div>
+          </div>
+        </div>
+        <div class="entry">
+          <div class="when">Aug 2018 – Jul 2022</div>
+          <div>
+            <div class="role">B.S., Information and Finance Management</div>
+            <div class="org">National Taipei University of Technology • <span class="good">GPA 3.87/4</span>（第1名畢業及3學年度書卷獎）</div>
+          </div>
+        </div>
+      </section>
 
-  <div class="section">
-    <h2>Projects & Research</h2>
-    <ul>
-      <li><strong>LLM Application with RAG and Agent Framework</strong> (Feb 2025 – Now)<br>Developed an agent-based system integrating Retrieval-Augmented Generation (RAG) for dynamic knowledge retrieval and task execution.</li>
-      <li><strong>Reinforcement Learning for Quantitative Trading</strong> (Sep 2021 – Jun 2022)<br>Applied deep RL techniques to forecast stock price movement and optimize trading strategies.</li>
-      <li><strong>CNN-based Image Recognition</strong> (Sep 2021 – Jun 2022)<br />Built and trained convolutional models for classification tasks using structured image datasets.</li>
-      <li><strong>Machine Learning for Classification & Regression</strong> (Sep 2021 – Jun 2022)<br>Constructed supervised learning models to forecast financial indicators and trend patterns.</li>
-    </ul>
-  </div>
+      <section id="skills">
+        <h2>Skills</h2>
+        <ul class="publist">
+          <li>Programming: Python, C/C++, JavaScript, SQL</li>
+          <li>Machine Learning: LLM Fine‑tuning, RAG, AI Agent, Transformers, PyTorch, TensorFlow</li>
+          <li>Web Development: React, Node.js, HTML/CSS</li>
+          <li>Tools: Linux, Docker, Git, CI/CD, MySQL</li>
+        </ul>
+      </section>
+    </div>
 
-  <div class="section">
-    <h2>Experiment</h2>
-    <ul>
-      <li><strong>Research Assistant, 國科會</strong> (Jan 2023 – Dec 2023)<br />Developed intelligent option trading systems using AI-driven market analysis methods.</li>
-      <li><strong>大專生計畫, 國科會</strong> (Jul 2021 – Dec 2021)<br />Designed a rule-based ML framework for automated options trading under academic supervision.</li>
-      <li><strong>Research Assistant, 中華民國證券櫃檯買賣中心</strong> (Feb 2022 – Jul 2022)<br />Research on algorithmic trading regulatory mechanisms and market impact</li>
-    </ul>
-  </div>
+    <section id="publications">
+      <h2>Publications & Awards</h2>
+      <ul class="publist">
+        <li><strong>Best Student Paper Award (2024).</strong> AI-based predictive system for trading strategies. <em>Euro-China Conference on Intelligent Data Analysis and Applications, 2024.</em></li>
+        <li><strong>Master's Thesis (2024).</strong> Based on Quantile Regression Forests for Predicting Option Settlement Price Returns and Trading Strategy Applications.</li>
+        <li><strong>First Author (2024).</strong> An intelligent option trading system based on heatmap analysis via PON/POD yields. <em>Expert Systems with Applications</em>, 257, 124948.</li>
+        <li><strong>First Author (2022).</strong> Quantitative Trading of Vertical Spread Option Strategies with Stop‑Loss by Machine Learning. <em>5th International Conference on Econometrics and Statistics</em>, 2022.</li>
+        <li><strong>First Author (2022).</strong> On the Prediction of Stock Price Return Based on LSTM and Application for Options Trading. <em>TRIA‑FeAT International Conference on Risk, Insurance, and Financial Engineering</em>, 2022.</li>
+      </ul>
+    </section>
 
-  <div class="section">
-    <h2>Internships</h2>
-    <ul>
-      <li><strong>Software Engineer Intern</strong>, 台灣增輝藝品有限公司 (Jul 2021 – Jun 2022)</li>
-      <li><strong>Financial Technology Intern</strong>, 金融服務平台部 / 將來商業銀行 (Jan 2021 – Feb 2021)</li>
-      <li><strong>Quant Trading Intern</strong>, 明郅資訊科技股份有限公司 (Sep 2020 – Aug 2021)</li>
-    </ul>
-  </div>
+    <section id="experience">
+      <h2>Experience</h2>
+      <h2>Experience</h2>
+      <div class="entry">
+        <div class="when">Jul 2025 – Now</div>
+        <div>
+          <div class="role">產學案研究助理 / 企業級專業數位分身平台系統</div>
+          <div class="org">奇鋐科技股份有限公司</div>
+          <ul class="bullets">
+            <li>Develop an AI Assistant with LLM understanding hardware specifications.</li>
+            <li>Use VLM to compare files (PDF and Excel) and mark differences to improve file reading efficiency.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="when">Feb 2025 – Now</div>
+        <div>
+          <div class="role">產學案研究助理 / 專業眼科醫療數位分身（門診諮詢平台）</div>
+          <div class="org">台北榮總眼科部</div>
+          <ul class="bullets">
+            <li>Co‑developed <span class="good">593</span> clinical dialogue scenarios and validated LLM responses.</li>
+            <li>Achieved &lt;<span class="good">2%</span> hallucination rate and summary with <span class="good">85%</span> precision with RAG.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="when">Jan 2023 – Dec 2023</div>
+        <div>
+          <div class="role">產學案研究助理 / 股票市場程式交易之監理</div>
+          <div class="org">中華民國證券櫃檯買賣中心</div>
+          <ul class="bullets">
+            <li>Developed AI‑powered trading and supervisory models for Taiwan’s financial market.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="when">Jul 2021 – Jun 2022</div>
+        <div>
+          <div class="role">資訊工程人員</div>
+          <div class="org">台灣增輝藝品有限公司</div>
+          <ul class="bullets">
+            <li>Managed 40+ devices and optimized troubleshooting workflows, reducing resolution time by <span class="good">25%</span>.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="when">Jan 2021 – Feb 2021</div>
+        <div>
+          <div class="role">金融服務平台部 實習生</div>
+          <div class="org">將來銀行</div>
+          <ul class="bullets">
+            <li>Improved UI/UX and tested 10+ core mobile banking features, enhancing customer onboarding.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-  <div class="section">
-    <h2>Skills</h2>
-    <ul>
-      <li><strong>Languages:</strong> Python, C/C++, JavaScript</li>
-      <li><strong>Frameworks:</strong> Hugging Face Transformers, React, Node.js</li>
-      <li><strong>Tools:</strong> Docker, Git, VS Code, Jupyter</li>
-      <li><strong>Databases:</strong> MySQL</li>
-      <li><strong>Web & DevOps:</strong> HTML/CSS, RESTful API, Linux Shell</li>
-    </ul>
+    <section id="projects">
+      <h2>Selected Projects</h2>
+      <div class="entry">
+        <div class="when">Enterprise AI Assistant</div>
+        <div>
+          <div class="role">企業級專業數位分身平台系統 / 奇鋐科技股份有限公司</div>
+          <ul class="bullets">
+            <li><strong>On‑premise AI Assistant:</strong> Enterprise‑level digital twin platform with strictly internal data circulation; supports natural‑language queries for hardware specifications.</li>
+            <li><strong>Automated Report Generation:</strong> LLM interprets requirements and outputs structured spreadsheet reports, improving efficiency by <span class="good">3×</span>.</li>
+            <li><strong>File Comparison with VLM:</strong> VLM‑based comparison for PDF/Excel highlights differences to streamline review with <span class="good">85% accuracy</span>.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="when">Generative AI with Integrated Pathway‑guided Dialogue Flow and RAG</div>
+        <div>
+          <div class="role">專業眼科醫療數位分身 / 台北榮總眼科門診諮詢平台</div>
+          <ul class="bullets">
+            <li><strong>Clinical Application:</strong> LLM for pre‑operative education and decision‑support in ophthalmology consultations.</li>
+            <li><strong>Quality & Collaboration:</strong> Co‑developed <span class="good">593</span> clinical dialogue scenarios; validated AI responses for clinical relevance and reliability.</li>
+            <li><strong>Model Optimization:</strong> &lt;<span class="good">2%</span> hallucination rate and <span class="good">85%</span> summary precision via RAG.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="when">Enhancing OCR for Multi‑row/Column Tables with VLM</div>
+        <div>
+          <div class="role">Research Project</div>
+          <ul class="bullets">
+            <li>Applied LLM to interpret image‑based tables and improve recognition accuracy.</li>
+            <li>Addressed complex and low‑quality tables, enhancing VLM‑based OCR performance.</li>
+            <li>Implemented Neighbor‑Guided Toolchain Reasoner (NGTR) to boost table recognition without direct fine‑tuning.</li>
+            <li>Improved pre‑processing to raise input image quality prior to VLM processing.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="when">Algorithmic Trading with Financial Engineering & Machine Learning</div>
+        <div>
+          <div class="role">Master’s Thesis • National Chengchi University</div>
+          <ul class="bullets">
+            <li><strong>Methodology:</strong> Quantile Regression Forests for predicting option settlement price returns and strategy applications.</li>
+            <li><strong>Empirical Study:</strong> Weekly TAIEX options backtesting.</li>
+            <li><strong>Prediction Accuracy:</strong> <span class="good">88.7%</span> after feature selection and optimized models.</li>
+            <li><strong>Performance:</strong> Significant positive returns with <span class="good">61.5%</span> win rate and <span class="good">1.2%</span> average return.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="when">HAPPY: Heatmap Analysis via PON/POD Yield</div>
+        <div>
+          <div class="role">Publication Highlight</div>
+          <ul class="bullets">
+            <li>Proposed a novel quantitative options trading framework.</li>
+            <li>Applied Random Forest, XGBoost, and LightGBM to predict win rates and backtest strategies.</li>
+            <li>Achieved <span class="good">63.3%</span> accuracy and <span class="good">62.4%</span> precision in forecasting outcomes.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="when">國科會計畫</div>
+        <div>
+          <div class="role">基於人工智慧技術的智能期權交易系統設計</div>
+          <ul class="bullets">
+            <li>Used reinforcement learning agents to predict option trade win rates.</li>
+            <li>Validated models with TAIEX data within strategy frameworks.</li>
+            <li>Applied Modern Portfolio Theory to minimize trading risk variance.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="when">國科會大專生計畫/</div>
+        <div>
+          <div class="role">基於機器學習架構下選擇權量化交易系統建置</div>
+          <ul class="bullets">
+            <li>Real‑time options trading web platform using JavaScript for ML‑based strategies.</li>
+            <li>Random Forest in Python estimated expiration price distribution; used Kelly criterion for money management.</li>
+            <li>Based on Taiwan Index Options: average <span class="good">71.97%</span> win rate, <span class="good">5.25%</span> annualized return, <span class="good">9.55</span> Sharpe ratio.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="when">Applying Federated Learning to Simulated Visual Systems</div>
+        <div>
+          <div class="role">Side Project • Federated Learning in edge device</div>
+          <ul class="bullets">
+            <li>Local training on user devices to address limited samples; privacy‑preserving design.</li>
+            <li>Scheduling algorithm uploads only model parameters at intervals.</li>
+            <li>Server‑side aggregation combines updates into a unified global model.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="when">Image Recognition Based on CNN & Self‑attention</div>
+        <div>
+          <div class="role">Side Project • Image Classification</div>
+          <ul class="bullets">
+            <li>CNNs for local spatial features; self‑attention for feature weighting and long‑range dependency capture.</li>
+            <li>Global average pooling and fully connected layers; achieved AUC <span class="good">0.96</span> vs. traditional CNN‑only models.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="activity">
+      <h2>Activity</h2>
+      <section id="activity">
+        <li>109年度國際扶輪社 ⽣命橋梁5萬元獎學⾦獲獎</li>
+        <li>與外籍⽣交流中⽂與台灣⽂化之社團</li>
+        <li>108年度鴻海10萬元獎學⾦ • 台北科技⼤學第⼀名畢業</li>
+      </ul>
+    </section>
+    </section>
+
+    <footer>
+      <p>© <span id="y"></span> Min‑Kuan Chen • <a href="mailto:minkuanchen99@gmail.com" style="color:var(--link)">minkuanchen99@gmail.com</a></p>
+      <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+    </footer>
   </div>
 </body>
 </html>
