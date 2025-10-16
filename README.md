@@ -5,7 +5,7 @@
   <div>
     <h1>陳旻寬 Chen Min-Kuan </h1>
     <p>
-      <li>I am Chen Min-Kuan, holding dual Master’s degrees: Computer Science from National Yang Ming Chiao Tung University (expected January 2027) and Commerce with a focus in Financial Engineering from National Chengchi University (July 2024).
+      <li>I am Chen Min-Kuan, holding dual Master’s degrees: Computer Science from National Yang Ming Chiao Tung University (expected Augst 2026) and Commerce with a focus in Financial Engineering from National Chengchi University (July 2024).
       </li>
       <li>My focus is on AI systems, LLM optimization, and enterprise IT integration, with proven outcomes demonstrated through international publications and practical system development.
       </li>
