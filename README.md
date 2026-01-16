@@ -7,8 +7,8 @@
 - Dual master's: Computer Science (National Yang Ming Chiao Tung University, expected 2026) and Financial Engineering (National Chengchi University, 2024).
 - Focus: AI systems, LLM optimization, and enterprise IT integration, backed by publications and real-world builds.
 
+**Bio-0:** https://minkuanchen.my.canva.site/  
 **Bio-1:** https://minkuanishere.github.io/min-kuan-cv/  
-**Bio-2:** https://minkuanchen.my.canva.site/  
 **Email:** minkuanchen99@gmail.com  
 **GitHub:** https://github.com/MinKuanIsHere  
 **LinkedIn:** https://www.linkedin.com/in/min-kuan-chen-89a525236/
